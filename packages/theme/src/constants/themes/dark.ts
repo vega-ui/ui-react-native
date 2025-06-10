@@ -1,0 +1,35 @@
+import { colors } from '@vega-ui/tokens';
+
+export const darkTheme = {
+  background: colors.white,
+  focus: colors.blue['350'],
+  text: colors.black,
+  textInverse: colors.white,
+  light: colors.white,
+  dark: colors.black,
+  error: colors.red['500'],
+  
+  gray: {
+    0: colors.gray[1000],
+    50: colors.gray[950],
+    100: colors.gray[900],
+    150: colors.gray[850],
+    200: colors.gray[800],
+    250: colors.gray[750],
+    300: colors.gray[700],
+    350: colors.gray[650],
+    400: colors.gray[600],
+    450: colors.gray[550],
+    500: colors.gray[500],
+    550: colors.gray[450],
+    600: colors.gray[400],
+    650: colors.gray[350],
+    700: colors.gray[300],
+    750: colors.gray[250],
+    800: colors.gray[200],
+    850: colors.gray[150],
+    900: colors.gray[100],
+    950: colors.gray[50],
+    1000: colors.gray[0],
+  },
+} as const

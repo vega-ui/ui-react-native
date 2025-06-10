@@ -1,20 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc5c263-4131-4699-974a-bb5118261de9" name="Changes" comment="" />
+    <list default="true" id="7dc5c263-4131-4699-974a-bb5118261de9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mobile-ui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app/(tabs)/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app/(tabs)/explore.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app/(tabs)/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app/+not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/app/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/fonts/SpaceMono-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/adaptive-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/partial-react-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/react-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/react-logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/react-logo@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/assets/images/splash-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/Collapsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ExternalLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/HapticTab.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/HelloWave.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ParallaxScrollView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ThemedText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ThemedView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ui/IconSymbol.ios.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ui/IconSymbol.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ui/TabBarBackground.ios.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/components/ui/TabBarBackground.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/constants/Colors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/hooks/useColorScheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/hooks/useColorScheme.web.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/hooks/useThemeColor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/scripts/reset-project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/preview/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/constants/themes/dark.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/constants/themes/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/constants/themes/light.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/__tests__/createTheme.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/__tests__/deepMerge.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/__tests__/getThemeValuesByPath.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/createTheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/deepMerge.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/getThemeValuesByPath.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/helpers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/hooks/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/hooks/useTheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/hooks/useThemeColor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/providers/ThemeProvider/ThemeProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/providers/ThemeProvider/context.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/providers/ThemeProvider/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/providers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/src/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/theme/tsup.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/src/colors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/src/spacings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/tokens/tsup.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/babel.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/jest.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/Separator/Separator.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/Separator/Separator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/Separator/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/Slot/Slot.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/Slot/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/hooks/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/hooks/useColorScheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/hooks/useColorScheme.web.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/hooks/useThemeColor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/ui/tsup.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-workspace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-workspace.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/.npmrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/fonts/GeistMonoVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/fonts/GeistVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/file-text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/turborepo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/turborepo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/docs/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/fonts/GeistMonoVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/fonts/GeistVF.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/file-text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/turborepo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/turborepo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/apps/web/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/eslint-config/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/eslint-config/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/eslint-config/next.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/eslint-config/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/eslint-config/react-internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/typescript-config/base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/typescript-config/nextjs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/typescript-config/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/typescript-config/react-library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/src/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/src/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/src/code.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/turbo/generators/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/packages/ui/turbo/generators/templates/component.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/pnpm-workspace.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -34,83 +201,135 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/slava/WebstormProjects/mobile-ui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.android.executor&quot;: &quot;Run&quot;,
-    &quot;npm.ios.executor&quot;: &quot;Run&quot;,
-    &quot;npm.reset-project.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;npm.storybook-generate.executor&quot;: &quot;Run&quot;,
-    &quot;npm.storybook-watch.executor&quot;: &quot;Run&quot;,
-    &quot;npm.storybook.executor&quot;: &quot;Run&quot;,
-    &quot;npm.storybook:ios.executor&quot;: &quot;Run&quot;,
-    &quot;npm.storybook:web.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/slava/WebstormProjects/mobile-ui/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.Separator (1).executor": "Run",
+    "Jest.Separator.executor": "Run",
+    "Jest.Separator.renders horizontal separator by default.executor": "Run",
+    "Jest.renders correctly (1).executor": "Run",
+    "Jest.renders correctly (2).executor": "Run",
+    "Jest.renders correctly.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Vitest.createTheme.executor": "Run",
+    "Vitest.deepMerge.executor": "Run",
+    "Vitest.getThemeValueByPath (1).executor": "Run",
+    "Vitest.getThemeValueByPath.executor": "Run",
+    "Vitest.renders correctly.executor": "Run",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "22.16.0",
+    "javascript.nodejs.core.library.typings.version": "22.15.29",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/slava/WebstormProjects/mobile-ui",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/slava/WebstormProjects/mobile-ui/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "npm.android.executor": "Run",
+    "npm.build.executor": "Run",
+    "npm.ios.executor": "Run",
+    "npm.preview > android.executor": "Run",
+    "npm.preview > ios.executor": "Run",
+    "npm.preview > start.executor": "Run",
+    "npm.reset-project.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.storybook-generate.executor": "Run",
+    "npm.storybook-watch.executor": "Run",
+    "npm.storybook.executor": "Run",
+    "npm.storybook:ios.executor": "Run",
+    "npm.storybook:web.executor": "Run",
+    "npm.test.executor": "Run",
+    "npm.theme > build.executor": "Run",
+    "npm.theme > dev.executor": "Run",
+    "npm.theme > test.executor": "Run",
+    "npm.tokens > build.executor": "Run",
+    "npm.ui > build.executor": "Run",
+    "npm.ui > dev.executor": "Run",
+    "npm.ui > test.executor": "Run",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/slava/WebstormProjects/mobile-ui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/packages/ui" />
+      <recent name="$PROJECT_DIR$/packages/ui/src" />
+      <recent name="$PROJECT_DIR$/packages/ui/src/components" />
+      <recent name="$PROJECT_DIR$/packages/ui/src/components/Separator" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/packages/ui/src/hooks" />
+      <recent name="$PROJECT_DIR$/packages/ui/src/constants" />
+      <recent name="$PROJECT_DIR$/packages/ui/src/components/Button" />
+      <recent name="$PROJECT_DIR$/packages/ui" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.storybook">
-    <configuration name="storybook-generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="getThemeValueByPath (1)" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/packages/theme" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/packages/theme/src/helpers/__tests__/getThemeValuesByPath.test.ts" />
+      <test-names>
+        <test-name value="getThemeValueByPath" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="getThemeValueByPath" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <working-dir value="$PROJECT_DIR$/packages/theme" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/packages/theme/src/helpers/__tests__/getThemeValuesByPath.ts" />
+      <test-names>
+        <test-name value="getThemeValueByPath" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="storybook-generate" />
+        <script value="build" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="storybook-watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="storybook-watch" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="theme &gt; test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/theme/package.json" />
       <command value="run" />
       <scripts>
-        <script value="storybook" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="storybook:ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook:ios" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="storybook:web" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook:web" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -118,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
-        <item itemvalue="npm.storybook:ios" />
-        <item itemvalue="npm.storybook-generate" />
-        <item itemvalue="npm.storybook-watch" />
-        <item itemvalue="npm.storybook:web" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.theme &gt; test" />
+        <item itemvalue="Vitest.getThemeValueByPath (1)" />
+        <item itemvalue="Vitest.getThemeValueByPath" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +352,7 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7dc5c263-4131-4699-974a-bb5118261de9" name="Changes" comment="" />
@@ -141,7 +361,10 @@
       <option name="presentableId" value="Default" />
       <updated>1748814946023</updated>
       <workItem from="1748814947151" duration="3821000" />
-      <workItem from="1748819421246" duration="1147000" />
+      <workItem from="1748819421246" duration="11002000" />
+      <workItem from="1749302024748" duration="911000" />
+      <workItem from="1749302995698" duration="24786000" />
+      <workItem from="1749417570861" duration="43507000" />
     </task>
     <servers />
   </component>

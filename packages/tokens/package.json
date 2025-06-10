@@ -1,0 +1,30 @@
+{
+  "name": "@vega-ui/tokens",
+  "version": "0.1.0",
+  "description": "Vega UI - Tokens",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf node_modules"
+  },
+  "type": "module",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js",
+      "default": "./build/index.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  },
+  "sideEffects": [
+    "build/*"
+  ]
+}

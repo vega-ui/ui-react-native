@@ -1,0 +1,41 @@
+{
+  "name": "@vega-ui/theme",
+  "version": "0.1.0",
+  "description": "Vega UI - Theme for React apps",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "clean": "rm -rf node_modules"
+  },
+  "type": "module",
+  "module": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js",
+      "default": "./build/index.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@vega-ui/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@react-native/typescript-config": "^0.79.3",
+    "@types/react": "^19.1.6",
+    "react": "^19.1.0",
+    "tsup": "^8.5.0",
+    "vitest": "^3.2.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "sideEffects": [
+    "build/*"
+  ]
+}

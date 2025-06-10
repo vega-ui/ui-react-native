@@ -1,0 +1,8 @@
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "outDir": "build"
+  },
+  "exclude": ["dist", "build"]
+}
