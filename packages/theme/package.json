@@ -2,6 +2,9 @@
   "name": "@vega-ui/theme",
   "version": "0.1.1",
   "description": "Vega UI - Theme for React apps",
+  "license": "MIT",
+  "author": "VegaUI Team",
+  "keywords": ["ui-kit", "ui", "ts", "typescript", "js"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -34,6 +37,9 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "sideEffects": [
     "build/*"

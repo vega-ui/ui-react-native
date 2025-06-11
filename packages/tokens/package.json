@@ -2,6 +2,9 @@
   "name": "@vega-ui/tokens",
   "version": "0.1.1",
   "description": "Vega UI - Tokens",
+  "license": "MIT",
+  "author": "VegaUI Team",
+  "keywords": ["ui-kit", "ui", "ts", "typescript", "js"],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -22,6 +25,9 @@
   ],
   "devDependencies": {
     "tsup": "^8.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "sideEffects": [
     "build/*"
