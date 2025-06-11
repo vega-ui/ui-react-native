@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "paths": {
+      "@vega-ui/tokens": ["./packages/tokens/src/index.ts"],
+      "@vega-ui/tokens/*": ["./packages/tokens/src/*"],
+    }
+  },
+  "exclude": ["node_modules"]
+}
