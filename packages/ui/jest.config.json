@@ -1,3 +1,9 @@
 {
-  "preset": "react-native"
+  "preset": "react-native",
+  "moduleNameMapper": {
+    "^@vega-ui/theme$": "<rootDir>/../../packages/theme/src/index.ts",
+    "^@vega-ui/theme/(.*)$": "<rootDir>/../../packages/theme/src/$1",
+    "^@vega-ui/tokens$": "<rootDir>/../../packages/tokens/src/index.ts",
+    "^@vega-ui/tokens/(.*)$": "<rootDir>/../../packages/tokens/src/$1"
+  }
 }

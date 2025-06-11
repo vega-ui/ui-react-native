@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "paths": {
+      "@vega-ui/theme": ["./packages/theme/src/index.ts"],
+      "@vega-ui/theme/*": ["./packages/theme/src/*"],
+      "@vega-ui/tokens": ["./packages/tokens/src/index.ts"],
+      "@vega-ui/tokens/*": ["./packages/tokens/src/*"],
+      "@vega-ui/react-native/*": ["./packages/react-native/src/*"],
+      "@vega-ui/react-native": ["./packages/react-native/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

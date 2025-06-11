@@ -30,6 +30,7 @@
     "@types/react": "^19.1.6",
     "react": "^19.1.0",
     "tsup": "^8.5.0",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.3"
   },
   "peerDependencies": {
