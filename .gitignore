@@ -143,3 +143,6 @@ dist
 out/
 build
 
+.idea
+.DS_Store
+

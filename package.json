@@ -6,11 +6,14 @@
   "main": "index.js",
   "scripts": {
     "test": "turbo test",
-    "build": "turbo build"
+    "build": "turbo build",
+    "lint": "echo 1",
+    "ci:version": "changeset version",
+    "ci:publish": "changeset publish"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.11.0",
   "resolutions": {
     "react": "19.0.0",
