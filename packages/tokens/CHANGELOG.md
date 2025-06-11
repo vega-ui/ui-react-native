@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.1.3
+
+### Patch Changes
+
+- a797ed8: fixed publish
+
 ## 0.1.2
 
 ### Patch Changes
