@@ -1,5 +1,13 @@
 # @vega-ui/theme
 
+## 0.1.3
+
+### Patch Changes
+
+- a797ed8: fixed publish
+- Updated dependencies [a797ed8]
+  - @vega-ui/tokens@0.1.3
+
 ## 0.1.2
 
 ### Patch Changes
