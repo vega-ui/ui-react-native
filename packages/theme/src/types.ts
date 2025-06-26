@@ -1,3 +1,5 @@
+type ColorPallet = 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 | 550 | 600 | 650 | 700 | 750 | 800 | 850 | 900 | 950 | 1000
+
 export interface Theme {
   background: string
   focus: string
@@ -6,30 +8,21 @@ export interface Theme {
   light: string
   dark: string
   error: string
+  white: string
+  black: string
   
-  gray: {
-    0: string
-    50: string
-    100: string
-    150: string
-    200: string
-    250: string
-    300: string
-    350: string
-    400: string
-    450: string
-    500: string
-    550: string
-    600: string
-    650: string
-    700: string
-    750: string
-    800: string
-    850: string
-    900: string
-    950: string
-    1000: string
-  },
+  gray: Record<ColorPallet, string>,
+  blue: Record<ColorPallet, string>,
+  
+  primary: Record<ColorPallet, string>,
+  secondary: Record<ColorPallet, string>,
+  
+  disable: {
+    text: string
+    background: string
+    placeholderText: string
+    border: string
+  }
 }
 
 type Join<K, P> = K extends string | number

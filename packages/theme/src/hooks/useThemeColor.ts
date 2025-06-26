@@ -5,7 +5,7 @@ import { useTheme } from './useTheme.ts';
 
 export function useThemeColor(
   colorName: ThemePath,
-  theme: 'dark' | 'light',
+  theme?: 'dark' | 'light',
 ) {
   const { theme: providedTheme } = useTheme()
   const colors = theme === 'dark' ? darkTheme : lightTheme;

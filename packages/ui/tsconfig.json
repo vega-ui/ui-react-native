@@ -5,6 +5,7 @@
     "skipLibCheck": true,
     "types": ["react-native", "react", "jest"],
     "jsxImportSource": "react",
+    "jsx": "react-jsx",
     "outDir": "build"
   },
   "exclude": ["dist", "build", "**/*.test.*"]

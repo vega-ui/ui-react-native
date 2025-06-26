@@ -1,0 +1,1 @@
+export const getButtonBorderRadius = (height: number, brRatio: number) => height * brRatio

@@ -1,13 +1,16 @@
 import { colors } from '@vega-ui/tokens';
-
-export const darkTheme = {
+import { Theme } from '../../types.ts';
+ 
+export const darkTheme: Theme = {
   background: colors.white,
   focus: colors.blue['350'],
-  text: colors.black,
-  textInverse: colors.white,
-  light: colors.white,
-  dark: colors.black,
+  text: colors.white,
+  textInverse: colors.black,
+  light: colors.black,
+  dark: colors.white,
   error: colors.red['500'],
+  white: colors.white,
+  black: colors.black,
   
   gray: {
     0: colors.gray[1000],
@@ -32,4 +35,83 @@ export const darkTheme = {
     950: colors.gray[50],
     1000: colors.gray[0],
   },
+  
+  blue: {
+    0: colors.blue[1000],
+    50: colors.blue[950],
+    100: colors.blue[900],
+    150: colors.blue[850],
+    200: colors.blue[800],
+    250: colors.blue[750],
+    300: colors.blue[700],
+    350: colors.blue[650],
+    400: colors.blue[600],
+    450: colors.blue[550],
+    500: colors.blue[500],
+    550: colors.blue[450],
+    600: colors.blue[400],
+    650: colors.blue[350],
+    700: colors.blue[300],
+    750: colors.blue[250],
+    800: colors.blue[200],
+    850: colors.blue[150],
+    900: colors.blue[100],
+    950: colors.blue[50],
+    1000: colors.blue[0],
+  },
+  
+  primary: {
+    0: colors.blue[1000],
+    50: colors.blue[950],
+    100: colors.blue[900],
+    150: colors.blue[850],
+    200: colors.blue[800],
+    250: colors.blue[750],
+    300: colors.blue[700],
+    350: colors.blue[650],
+    400: colors.blue[600],
+    450: colors.blue[550],
+    500: colors.blue[500],
+    550: colors.blue[450],
+    600: colors.blue[400],
+    650: colors.blue[350],
+    700: colors.blue[300],
+    750: colors.blue[250],
+    800: colors.blue[200],
+    850: colors.blue[150],
+    900: colors.blue[100],
+    950: colors.blue[50],
+    1000: colors.blue[0],
+  },
+  
+  secondary: {
+    0: colors.smoke[1000],
+    50: colors.smoke[950],
+    100: colors.smoke[900],
+    150: colors.smoke[850],
+    200: colors.smoke[800],
+    250: colors.smoke[750],
+    300: colors.smoke[700],
+    350: colors.smoke[650],
+    400: colors.smoke[600],
+    450: colors.smoke[550],
+    500: colors.smoke[500],
+    550: colors.smoke[450],
+    600: colors.smoke[400],
+    650: colors.smoke[350],
+    700: colors.smoke[300],
+    750: colors.smoke[250],
+    800: colors.smoke[200],
+    850: colors.smoke[150],
+    900: colors.smoke[100],
+    950: colors.smoke[50],
+    1000: colors.smoke[0],
+  },
+  
+  disable: {
+    text: colors.gray[300],
+    background: colors.gray[900],
+    placeholderText: colors.gray[400],
+    border: colors.gray[700]
+  }
 } as const

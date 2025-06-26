@@ -7,7 +7,7 @@ export default defineConfig({
   entry: ['src/**/*'],
   clean: true,
   outDir: OUTPUT_DIR,
-  external: ['react-native', 'react'],
+  external: ['react-native', 'react', 'react-native-reanimated'],
   dts: true,
   format: 'esm',
   esbuildOptions(options) {
