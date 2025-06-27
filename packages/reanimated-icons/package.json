@@ -30,11 +30,14 @@
   "files": [
     "build"
   ],
+  "dependencies": {
+    "@vega-ui/reanimated-lucide": "^1.0.4"
+  },
   "devDependencies": {
     "@react-native/typescript-config": "^0.80.0",
     "@svgr/cli": "^8.1.0",
     "@types/react": "^19.1.8",
-    "@vega-ui/svgr-reanimated": "1.0.5",
+    "@vega-ui/svgr-reanimated": "1.0.6",
     "tsup": "^8.5.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
@@ -50,8 +53,5 @@
   },
   "sideEffects": [
     "build/*"
-  ],
-  "dependencies": {
-    "@vega-ui/reanimated-lucide": "^1.0.3"
-  }
+  ]
 }
