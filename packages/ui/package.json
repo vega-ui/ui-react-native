@@ -31,10 +31,8 @@
     "build"
   ],
   "dependencies": {
-    "@vega-ui/icons-react-native": "workspace:*",
     "@vega-ui/theme": "workspace:*",
     "@vega-ui/tokens": "workspace:*",
-    "@vega-ui/reanimated-icons": "workspace:*",
     "@vega-ui/utils": "1.4.0"
   },
   "devDependencies": {

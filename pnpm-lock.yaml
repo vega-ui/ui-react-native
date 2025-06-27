@@ -174,8 +174,8 @@ importers:
   packages/reanimated-icons:
     dependencies:
       '@vega-ui/reanimated-lucide':
-        specifier: ^1.0.3
-        version: 1.0.3(react-native-reanimated@3.17.5(@babel/core@7.27.4)(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native-svg@15.12.0(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0)
+        specifier: ^1.0.4
+        version: 1.0.4(react-native-reanimated@3.17.5(@babel/core@7.27.4)(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native-svg@15.12.0(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0)
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -199,8 +199,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0
       '@vega-ui/svgr-reanimated':
-        specifier: 1.0.5
-        version: 1.0.5
+        specifier: 1.0.6
+        version: 1.0.6
       tsup:
         specifier: ^8.5.0
         version: 8.5.0(postcss@8.5.6)(tsx@4.20.3)(typescript@5.8.3)
@@ -244,12 +244,6 @@ importers:
 
   packages/ui:
     dependencies:
-      '@vega-ui/icons-react-native':
-        specifier: workspace:*
-        version: link:../icons
-      '@vega-ui/reanimated-icons':
-        specifier: workspace:*
-        version: link:../reanimated-icons
       '@vega-ui/theme':
         specifier: workspace:*
         version: link:../theme
@@ -2003,16 +1997,16 @@ packages:
     peerDependencies:
       '@urql/core': ^5.0.0
 
-  '@vega-ui/reanimated-lucide@1.0.3':
-    resolution: {integrity: sha512-g89rc0GiiJrbllrQwSYTW/af9JO2E2xJBlu0WGcEIU1q4Cm1SrJveTv6j/7NsHu+Yat6zmWcq9TCOu9oAXdwSQ==}
+  '@vega-ui/reanimated-lucide@1.0.4':
+    resolution: {integrity: sha512-ErRNV0jfT0EuzfQevXeAeZdN5SH8QFINRsjQW3y6tcWh9T80P7HQ2QCZDukPwTVIp52he/wlVUyL3cxulLYotg==}
     peerDependencies:
       react: 19.0.0
       react-native: 0.79.4
       react-native-reanimated: ~3.17.4
       react-native-svg: ^15.12.0
 
-  '@vega-ui/svgr-reanimated@1.0.5':
-    resolution: {integrity: sha512-dN2ow/BO8Nh5Lfo8baJdldJ+O41VOZ9yhb3+TuYThxT3B/OAOXMhZD5mQJhpdgkq7vAYInkOWR0nK05Fr0cDEQ==}
+  '@vega-ui/svgr-reanimated@1.0.6':
+    resolution: {integrity: sha512-IcinUFbeh3rxjCLxlcmI7MQmrHz3znPKbWT0CobqhL2chVsnPYZSNivSzGXDjAPiRt0c/CVuYIYiyswA5GGwtg==}
 
   '@vega-ui/utils@1.4.0':
     resolution: {integrity: sha512-qvtMVnLcrNms3QplyRPVNyGogLIj9xY8PUj/Gn2T7ZSyDiuaw9/hSfcVWaDgyjx5PWhP356ac23oo9q9RgSkSw==}
@@ -7972,7 +7966,7 @@ snapshots:
       '@urql/core': 5.1.1
       wonka: 6.3.5
 
-  '@vega-ui/reanimated-lucide@1.0.3(react-native-reanimated@3.17.5(@babel/core@7.27.4)(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native-svg@15.12.0(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0)':
+  '@vega-ui/reanimated-lucide@1.0.4(react-native-reanimated@3.17.5(@babel/core@7.27.4)(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native-svg@15.12.0(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0))(react-native@0.79.4(@babel/core@7.27.4)(@types/react@19.0.0)(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6
@@ -7983,7 +7977,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vega-ui/svgr-reanimated@1.0.5':
+  '@vega-ui/svgr-reanimated@1.0.6':
     dependencies:
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6

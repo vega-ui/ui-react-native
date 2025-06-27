@@ -3,25 +3,21 @@ import { StyleProp, ViewStyle } from 'react-native'
 
 export type ButtonSizes = Record<'small' | 'medium' | 'large', StyleProp<ViewStyle>>
 
-
 export const getButtonSizeStyles = () => {
   const space = spacings()
   
   return {
     small: {
       height: space['21'],
-      paddingInline: space['10'],
-      paddingBlock: space['6'],
+      width: space['21'],
     },
     medium: {
       height: space['24'],
-      paddingInline: space['18'],
-      paddingBlock: space['7'],
+      width: space['24'],
     },
     large: {
       height: space['27'],
-      paddingInline: space['24'],
-      paddingBlock: space['8'],
+      width: space['27'],
     }
   } as const satisfies ButtonSizes
 }

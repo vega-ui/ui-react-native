@@ -2,8 +2,8 @@ import { FC } from 'react';
 import { StyleSheet, Text as RNText, TextProps as RNTextProps, TextStyle as RNTextStyle } from 'react-native';
 import { useThemeColor } from '../../shared/hooks/useThemeColor.ts';
 import { Slot } from '../Slot';
-
-export type TextSize = 1 | 2 | 3 | 4 | 5 | 6  | 7 | 8 | 9 | 10 | 11
+import { TextSize } from './types.ts';
+import { getTextFontSize } from './styles';
 
 export interface TextProps extends RNTextProps {
   /**
@@ -54,22 +54,6 @@ export const Text: FC<TextProps> = ({
       {...props}
     />
   )
-}
-
-const getTextFontSize = (size: TextProps['size'] = 3) => {
-  return ({
-    1: 12,
-    2: 14,
-    3: 16,
-    4: 18,
-    5: 20,
-    6: 24,
-    7: 28,
-    8: 32,
-    9: 40,
-    10: 48,
-    11: 64,
-  })[size]
 }
 
 const getStyles = ({ size, color, fontSize, fontWeight }: TextStyle) => StyleSheet.create({

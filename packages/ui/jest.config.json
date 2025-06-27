@@ -1,9 +1,16 @@
 {
   "preset": "react-native",
+  "roots": ["<rootDir>"],
+  "modulePaths": ["<rootDir>"],
   "moduleNameMapper": {
     "^@vega-ui/theme$": "<rootDir>/../../packages/theme/src/index.ts",
     "^@vega-ui/theme/(.*)$": "<rootDir>/../../packages/theme/src/$1",
     "^@vega-ui/tokens$": "<rootDir>/../../packages/tokens/src/index.ts",
-    "^@vega-ui/tokens/(.*)$": "<rootDir>/../../packages/tokens/src/$1"
-  }
+    "^@vega-ui/tokens/(.*)$": "<rootDir>/../../packages/tokens/src/$1",
+    "^@vega-ui/utils": "<rootDir>/../../packages/ui/node_modules/@vega-ui/utils/dist/index.js"
+  },
+  "moduleDirectories": ["node_modules"],
+  "transformIgnorePatterns": [
+    "'node_modules/(?!(react-native|@react-native|react-clone-referenced-element|@react-navigation)/)'"
+  ]
 }

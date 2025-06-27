@@ -1,11 +1,11 @@
-import { BaseButtonLabelProps } from '../../BaseButton';
+import { BaseButtonIconProps } from '../../BaseButton';
 
-export type ButtonLabelSizes = Record<'small' | 'medium' | 'large', BaseButtonLabelProps['size']>
+export type ButtonIconSizes = Record<'small' | 'medium' | 'large', BaseButtonIconProps['size']>
 
-export const getButtonLabelSize = () => {
+export const getButtonIconSize = () => {
   return {
-    small: 2,
-    medium: 3,
-    large: 4
-  } as const satisfies ButtonLabelSizes
+    small: 'xs',
+    medium: 'sm',
+    large: 'md'
+  } as const satisfies ButtonIconSizes
 }

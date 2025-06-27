@@ -7,21 +7,36 @@ import { BaseButtonAppearance, BaseButtonVariant } from './types.ts';
 
 export interface BaseButtonProps extends PressableProps {
   /**
-   * If true, renders the text as a child component using `Slot`.
-   * Useful for compatibility with native elements or other components.
+   * If true, renders the удуьуте as a child component using `Slot`.
    */
-  asChild?: boolean
+  asChild?: boolean;
   
-  variant?: BaseButtonVariant
+  /**
+   * Defines the variant of the button.
+   */
+  variant?: BaseButtonVariant;
   
-  appearance?: BaseButtonAppearance
+  /**
+   * Defines the appearance of the button (e.g., 'fill', 'outline', etc.).
+   * Determines how the button is visually styled.
+   */
+  appearance?: BaseButtonAppearance;
   
-  disabled?: boolean
+  /**
+   * If true, the button is disabled and cannot be interacted with.
+   */
+  disabled?: boolean;
   
-  pressableStyle?: PressableProps['style']
+  /**
+   * Optional custom style for the Pressable component.
+   */
+  pressableStyle?: PressableProps['style'];
 }
 
-/** Text is a UI component used to display readable content, such as labels, descriptions, or body text, with customizable styling */
+/**
+ * BaseButton is a fundamental button component that handles interaction and visual styling.
+ * It supports different variants, appearances, and customization of pressable styles.
+ */
 export const BaseButton: FC<BaseButtonProps> = ({
   children,
   variant = 'primary',

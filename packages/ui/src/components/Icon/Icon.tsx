@@ -37,10 +37,11 @@ export const Icon: FC<IconProps> = ({
   size = 'sm',
   color,
   children,
+  strokeWidth = 2.5,
   ref,
   ...props
 }) => {
-  const iconColor = useThemeColor('text')
+  const themeColor = useThemeColor('text')
   
   const s = typeof size === 'number'
     ? size
@@ -52,7 +53,8 @@ export const Icon: FC<IconProps> = ({
       accessibilityRole='image'
       width={s}
       height={s}
-      color={color === null ? undefined : color ? color : iconColor}
+      color={color === null ? undefined : color ? color : themeColor}
+      strokeWidth={strokeWidth}
       {...props}
     >
       {children}

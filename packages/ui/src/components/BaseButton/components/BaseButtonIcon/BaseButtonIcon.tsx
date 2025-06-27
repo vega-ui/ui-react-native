@@ -10,7 +10,7 @@ export const BaseButtonIcon: FC<BaseButtonIconProps> = ({ children, color = null
   const { pressed: sharedPressed } = useBaseButtonAnimationContext()
   
   const iconStyles = useBaseButtonIconStyles({ variant, appearance })
-  
+
   const { animatedProps } = useBaseButtonIconPressAnimations({
     enabledStyle: iconStyles.enabled,
     pressedStyle: iconStyles.pressed,
