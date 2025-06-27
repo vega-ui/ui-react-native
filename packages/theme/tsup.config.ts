@@ -4,7 +4,7 @@ const OUTPUT_DIR = 'build'
 
 export default defineConfig({
   name: '@vega-ui/theme',
-  entry: ['src/**/*'],
+  entry: ['src/**/*', '!src/**/*.{test.ts,test.tsx}'],
   clean: true,
   outDir: OUTPUT_DIR,
   external: ['react'],
