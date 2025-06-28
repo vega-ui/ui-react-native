@@ -1,2 +1,7 @@
 export * from './Separator'
 export * from './Slot'
+export * from './Text'
+export * from './BaseButton'
+export * from './Button'
+export * from './IconButton'
+export * from './Icon'

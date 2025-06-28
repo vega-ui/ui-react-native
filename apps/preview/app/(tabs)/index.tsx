@@ -1,30 +1,26 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native';
-import { Separator } from "@vega-ui/react-native";
+import { View } from 'react-native';
+import { Text, Button, ButtonLabel, ButtonIcon, IconButton } from "@vega-ui/react-native";
+import { useColorScheme } from "@/hooks/useColorScheme";
+import { Heart, Globe } from '@vega-ui/reanimated-icons'
 
 export default function HomeScreen() {
+  const scheme = useColorScheme()
+  
   return (
-    <View style={{ marginTop: 200 }}>
-      <Separator />
+    <View style={{ paddingTop: 200, flex: 1, alignItems: 'center', backgroundColor: scheme === 'dark' ? 'black' : 'white', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+      <Text size={3}>Hello</Text>
+      <IconButton variant='secondary' appearance='ghost'>
+        {({ pressed }) => (
+          pressed ? <Heart /> : <Globe />
+        )}
+      </IconButton>
+      <Button variant='primary' appearance='ghost' size='large'>
+        <ButtonLabel>Hello, world!</ButtonLabel>
+        <ButtonIcon>
+          <Heart />
+        </ButtonIcon>
+      </Button>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});

@@ -1,15 +1,20 @@
 import { FC } from 'react';
 import { StyleSheet, View, ViewProps } from 'react-native';
-import { useThemeColor } from '../../hooks/useThemeColor.ts';
+import { useThemeColor } from '../../shared/hooks/useThemeColor.ts';
 
 export interface SeparatorProps extends Partial<ViewProps> {
+  /**
+   * Orientation of the separator
+   * @default 'horizontal'
+   */
   orientation?: 'horizontal' | 'vertical';
 }
 
-interface SeparatorStyleProps extends Pick<SeparatorProps, 'orientation'> {
+interface SeparatorStyle extends Pick<SeparatorProps, 'orientation'> {
   color?: string
 }
 
+/** A Separator is a UI component used to visually divide content into distinct sections, often represented as a line or space to enhance clarity and organization in layouts */
 export const Separator: FC<SeparatorProps> = ({
   orientation = 'horizontal',
   style,
@@ -26,7 +31,7 @@ export const Separator: FC<SeparatorProps> = ({
   )
 }
 
-const getStyles = ({ orientation, color }: SeparatorStyleProps) => StyleSheet.create({
+const getStyles = ({ orientation, color }: SeparatorStyle) => StyleSheet.create({
   separator: {
     width: orientation === 'horizontal' ? '100%' : 1,
     height: orientation === 'horizontal' ? 1 : '100%',

@@ -1,3 +1,6 @@
 # Test
 packages/ui/jest.config.ts
 tests/**/jest.config.js
+
+# Auto-generated
+packages/icons/src/components

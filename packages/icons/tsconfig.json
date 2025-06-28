@@ -1,0 +1,13 @@
+{
+  "extends": ["@react-native/typescript-config"],
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "build",
+    "jsxImportSource": "react",
+    "jsx": "react-jsx"
+  },
+  "exclude": ["dist", "build", "node_modules"],
+}

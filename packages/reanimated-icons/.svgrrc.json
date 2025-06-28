@@ -1,0 +1,30 @@
+{
+  "native": true,
+  "typescript": true,
+  "icon": true,
+  "prettier": true,
+  "dimensions": false,
+  "prettierConfig": {
+    "singleQuote": true
+  },
+  "jsxRuntime": "classic",
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "removeDimensions",
+        "active": true
+      },
+      {
+        "name": "removeTitle",
+        "active": true
+      },
+      {
+        "name": "removeAttrs",
+        "params": {
+          "attrs": ["xmlns", "xmlns:xlink", "xml:space"]
+        }
+      }
+    ]
+  }
+}
