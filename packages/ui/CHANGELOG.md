@@ -1,5 +1,17 @@
 # @vega-ui/react-native
 
+## 0.2.0
+
+### Minor Changes
+
+- 8cef16a: Added new components - IconButton, Button, ButtonBase, Icon, Slot
+
+### Patch Changes
+
+- Updated dependencies [8cef16a]
+  - @vega-ui/theme@0.2.0
+  - @vega-ui/tokens@0.2.0
+
 ## 0.1.3
 
 ### Patch Changes
