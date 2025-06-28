@@ -212,10 +212,6 @@ importers:
         version: 5.8.3
 
   packages/theme:
-    dependencies:
-      '@vega-ui/tokens':
-        specifier: workspace:*
-        version: link:../tokens
     devDependencies:
       '@react-native/typescript-config':
         specifier: ^0.79.3
