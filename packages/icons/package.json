@@ -34,6 +34,7 @@
     "lucide-react-native": "^0.517.0"
   },
   "devDependencies": {
+    "@types/react": "19.0.0",
     "@react-native/typescript-config": "^0.79.3",
     "@svgr/cli": "^8.1.0",
     "tsup": "^8.5.0"
