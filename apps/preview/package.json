@@ -44,9 +44,6 @@
     "react-native-web": "~0.20.0",
     "react-native-webview": "13.13.5"
   },
-  "resolutions": {
-    "react-native-reanimated": "3.17.4"
-  },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "19.0.14",
