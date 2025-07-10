@@ -5,7 +5,9 @@
     "esModuleInterop": true,
     "paths": {
       "@vega-ui/tokens": ["./packages/tokens/src/index.ts"],
-      "@vega-ui/tokens/*": ["./packages/tokens/src/*"]
+      "@vega-ui/tokens/*": ["./packages/tokens/src/*"],
+      "@vega-ui/icons-react-native": ["./packages/icons/src/index.ts"],
+      "@vega-ui/icons-react-native/*": ["./packages/icons/src/*"]
     },
   },
   "exclude": ["node_modules"]
