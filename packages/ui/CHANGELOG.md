@@ -1,5 +1,19 @@
 # @vega-ui/react-native
 
+## 0.3.0
+
+### Minor Changes
+
+- 2c1051f: Added new components: Badge, Alert, Accordion, Collapsible
+
+### Patch Changes
+
+- Updated dependencies [2c1051f]
+  - @vega-ui/tokens@0.3.0
+  - @vega-ui/theme@0.3.0
+  - @vega-ui/icons-react-native@0.3.0
+  - @vega-ui/reanimated-icons@0.3.0
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.3.0
+
+### Minor Changes
+
+- 2c1051f: Added new components: Badge, Alert, Accordion, Collapsible
+
 ## 0.2.0
 
 ## 0.1.3
