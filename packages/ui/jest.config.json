@@ -9,8 +9,8 @@
     "^@vega-ui/tokens/(.*)$": "<rootDir>/../../packages/tokens/src/$1",
     "^@vega-ui/utils": "<rootDir>/../../packages/ui/node_modules/@vega-ui/utils/dist/index.js",
     "^@vega-ui/hooks": "<rootDir>/../../packages/ui/node_modules/@vega-ui/hooks/dist/index.js",
-    "^@vega-ui/react-native-icons": "<rootDir>/../../packages/react-native-icons/src/index.ts",
-    "^@vega-ui/react-native-icons/(.*)$": "<rootDir>/../../packages/react-native-icons/src/$1"
+    "^@vega-ui/react-native-icons": "<rootDir>/../../packages/icons/src/index.ts",
+    "^@vega-ui/react-native-icons/(.*)$": "<rootDir>/../../packages/icons/src/$1"
   },
   "moduleDirectories": ["node_modules"],
   "transformIgnorePatterns": [
