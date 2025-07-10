@@ -1,8 +1,8 @@
-import { Children, cloneElement, FC, isValidElement, ReactElement, ReactNode, Ref } from 'react';
+import { Children, cloneElement, isValidElement, ReactElement, ReactNode, Ref } from 'react';
 import { mergeProps } from '@vega-ui/utils';
 import { View, ViewProps } from 'react-native';
 
-export interface SlotProps extends ViewProps, Record<string, unknown> {
+export type SlotProps<T> = Omit<ViewProps, 'children'> & Record<string, unknown> & Omit<{
   /**
    * The content that will be rendered inside the Slot component.
    * Can be any valid ReactNode such as text, components, or JSX.
@@ -14,13 +14,13 @@ export interface SlotProps extends ViewProps, Record<string, unknown> {
    * Allows direct access to the underlying view for manipulation or animation.
    */
   ref?: Ref<View>;
-}
+}, keyof T> & T
 
 
 /**
  * Slot is a container component that renders its children, allowing flexible content placement.
  */
-export const Slot: FC<SlotProps> = ({ children, ref, ...props }) => {
+export const Slot = <T,>({ children, ref, ...props }: SlotProps<T>): ReactElement => {
   const child = Children.only(children);
 
   if (!isValidElement(child)) {

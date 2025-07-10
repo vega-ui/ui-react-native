@@ -31,9 +31,17 @@ export interface TextProps extends RNTextProps {
    * Useful for compatibility with native elements or other components.
    */
   asChild?: boolean
+  
+  
+  /**
+   * Multiplier applied to the font size to calculate line height.
+   * Useful for consistent vertical rhythm across different text sizes.
+   * For example, `1.5` means lineHeight = fontSize × 1.5.
+   */
+  lineHeightMultiplier?: number
 }
 
-type TextStyle = Pick<TextProps, 'size' | 'color' | 'fontSize' | 'fontWeight'>
+type TextStyle = Pick<TextProps, 'size' | 'color' | 'fontSize' | 'fontWeight' | 'lineHeightMultiplier'>
 
 /** Text is a UI component used to display readable content, such as labels, descriptions, or body text, with customizable styling */
 export const Text: FC<TextProps> = ({
@@ -41,6 +49,7 @@ export const Text: FC<TextProps> = ({
   color,
   fontSize,
   fontWeight,
+  lineHeightMultiplier,
   asChild,
   style,
   ...props
@@ -50,16 +59,23 @@ export const Text: FC<TextProps> = ({
 
   return (
     <Element
-      style={[getStyles({ size, color: color ?? textColor, fontWeight, fontSize }).text, style]}
+      accessible
+      accessibilityRole='text'
+      style={[getStyles({ size, color: color ?? textColor, fontWeight, fontSize, lineHeightMultiplier }).text, style]}
       {...props}
     />
   )
 }
 
-const getStyles = ({ size, color, fontSize, fontWeight }: TextStyle) => StyleSheet.create({
-  text: {
-    fontSize: fontSize ?? getTextFontSize(size),
-    fontWeight,
-    color,
-  }
-})
+const getStyles = ({ size, color, fontSize, fontWeight, lineHeightMultiplier }: TextStyle) => {
+  const fs = fontSize ?? getTextFontSize(size)
+  
+  return StyleSheet.create({
+    text: {
+      fontSize: fs,
+      fontWeight,
+      color,
+      lineHeight: lineHeightMultiplier !== undefined ? fs * lineHeightMultiplier : undefined,
+    }
+  })
+}

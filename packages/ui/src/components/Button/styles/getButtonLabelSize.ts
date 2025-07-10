@@ -1,6 +1,7 @@
 import { BaseButtonLabelProps } from '../../BaseButton';
+import { ButtonSize } from '../types.ts';
 
-export type ButtonLabelSizes = Record<'small' | 'medium' | 'large', BaseButtonLabelProps['size']>
+export type ButtonLabelSizes = Record<ButtonSize, BaseButtonLabelProps['size']>
 
 export const getButtonLabelSize = () => {
   return {

@@ -1,7 +1,9 @@
 import { FC } from 'react';
-import { BaseButton, BaseButtonIcon, BaseButtonProps } from '../BaseButton';
-import { getButtonBorderRadius, getButtonIconSize, getButtonSizeStyles } from './styles';
+import { BaseButton, BaseButtonProps } from '../BaseButton';
 import { StyleSheet } from 'react-native';
+import { IconButtonSize } from './types.ts';
+import { IconButtonProvider } from './providers';
+import { useIconButtonStyles } from './hooks';
 
 export interface IconButtonProps extends BaseButtonProps {
   /**
@@ -14,7 +16,7 @@ export interface IconButtonProps extends BaseButtonProps {
    * Size of the icon button. Can be 'small', 'medium', or 'large'.
    * Adjusts the overall size of the button and the icon.
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: IconButtonSize;
 }
 
 /**
@@ -22,22 +24,21 @@ export interface IconButtonProps extends BaseButtonProps {
  * It supports customizable size, border radius, and an optional icon inside.
  */
 export const IconButton: FC<IconButtonProps> = ({ children, size = 'medium', style, brRatio = 0.333, ...props }) => {
-  const styles = getButtonSizeStyles()
-  const br = getButtonBorderRadius(styles[size].height, brRatio)
+  const iconButtonStyles = useIconButtonStyles(size, brRatio)
   
   return (
-    <BaseButton style={({ pressed }) => [styles[size], buttonStyles.button, { borderRadius: br }, typeof style === 'function' ? style({ pressed }) : style]} {...props}>
-      {({ pressed }) => (
-        <BaseButtonIcon size={getButtonIconSize()[size]}>
-          {typeof children === 'function' ? children({ pressed }) : children}
-        </BaseButtonIcon>
-      )}
-    </BaseButton>
+    <IconButtonProvider size={size}>
+      <BaseButton style={({ pressed }) => [iconButtonStyles, buttonStyles.button, typeof style === 'function' ? style({ pressed }) : style]} {...props}>
+        {({ pressed }) => (
+          typeof children === 'function' ? children({ pressed }) : children
+        )}
+      </BaseButton>
+    </IconButtonProvider>
   )
 }
 
 const buttonStyles = StyleSheet.create({
   button: {
     aspectRatio: 1
-  }
+  },
 })

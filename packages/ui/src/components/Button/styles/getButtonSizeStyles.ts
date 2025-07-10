@@ -1,7 +1,8 @@
 import { spacings } from '@vega-ui/tokens'
 import { StyleProp, ViewStyle } from 'react-native'
+import { ButtonSize } from '../types.ts';
 
-export type ButtonSizes = Record<'small' | 'medium' | 'large', StyleProp<ViewStyle>>
+export type ButtonSizes = Record<ButtonSize, StyleProp<ViewStyle>>
 
 
 export const getButtonSizeStyles = () => {

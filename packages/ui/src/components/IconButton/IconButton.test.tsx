@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react-native';
 import { IconButton } from './IconButton';
 import { Text } from 'react-native';
-import Svg, { Path } from 'react-native-svg'; // пример иконки
+import Svg, { Path } from 'react-native-svg';
 
 const HeartIcon = ({ ...props }) => {
   return (
