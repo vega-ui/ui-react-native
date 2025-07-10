@@ -1,7 +1,7 @@
 export * from 'lucide-react-native'
 
-import { default as DoubleArrowLeftIcon } from './components/icons/DoubleArrowLeft.js';
-import { default as DoubleArrowRightIcon } from './components/icons/DoubleArrowRight.js'
+import { default as DoubleArrowLeftIcon } from './components/icons/DoubleArrowLeft';
+import { default as DoubleArrowRightIcon } from './components/icons/DoubleArrowRight'
 // Flags
 
 import FlagAD from './components/flags/Ad.js';
