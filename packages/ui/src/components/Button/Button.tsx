@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { BaseButton, BaseButtonProps } from '../BaseButton';
-import { getButtonBorderRadius, getButtonSizeStyles } from './styles';
 import { ButtonProvider } from './providers';
+import { ButtonSize } from './types.ts';
+import { useButtonStyles } from './hooks';
 
 export interface ButtonProps extends BaseButtonProps {
   /**
@@ -14,7 +15,7 @@ export interface ButtonProps extends BaseButtonProps {
    * Size of the button. Can be 'small', 'medium', or 'large'.
    * Adjusts the overall size of the button and the icon inside it (if any).
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: ButtonSize;
 }
 
 /**
@@ -22,14 +23,12 @@ export interface ButtonProps extends BaseButtonProps {
  * It supports customizable size, border radius, and appearance, with optional text or icon content.
  */
 export const Button: FC<ButtonProps> = ({ children, size = 'medium', style, brRatio = 0.333, ...props }) => {
-  const styles = getButtonSizeStyles()
-  const br = getButtonBorderRadius(styles[size].height, brRatio)
+  const buttonStyles = useButtonStyles(size, brRatio)
   
   return (
     <BaseButton
       style={({ pressed }) => [
-        styles[size],
-        { borderRadius: br },
+        buttonStyles,
         typeof style === 'function' ? style({ pressed }) : style
       ]}
       {...props}

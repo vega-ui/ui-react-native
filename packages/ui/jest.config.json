@@ -7,7 +7,8 @@
     "^@vega-ui/theme/(.*)$": "<rootDir>/../../packages/theme/src/$1",
     "^@vega-ui/tokens$": "<rootDir>/../../packages/tokens/src/index.ts",
     "^@vega-ui/tokens/(.*)$": "<rootDir>/../../packages/tokens/src/$1",
-    "^@vega-ui/utils": "<rootDir>/../../packages/ui/node_modules/@vega-ui/utils/dist/index.js"
+    "^@vega-ui/utils": "<rootDir>/../../packages/ui/node_modules/@vega-ui/utils/dist/index.js",
+    "^@vega-ui/hooks": "<rootDir>/../../packages/ui/node_modules/@vega-ui/hooks/dist/index.js"
   },
   "moduleDirectories": ["node_modules"],
   "transformIgnorePatterns": [

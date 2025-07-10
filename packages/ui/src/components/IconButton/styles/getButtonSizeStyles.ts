@@ -1,23 +1,24 @@
-import { spacings } from '@vega-ui/tokens'
 import { StyleProp, ViewStyle } from 'react-native'
+import { getButtonSizes } from './getButtonSizes.ts';
+import { IconButtonSize } from '../types.ts';
 
-export type ButtonSizes = Record<'small' | 'medium' | 'large', StyleProp<ViewStyle>>
+export type ButtonSizes = Record<IconButtonSize, StyleProp<ViewStyle>>
 
 export const getButtonSizeStyles = () => {
-  const space = spacings()
+  const { small: smallSize, medium: mediumSize, large: largeSize } = getButtonSizes()
   
   return {
     small: {
-      height: space['21'],
-      width: space['21'],
+      height: smallSize,
+      width: smallSize,
     },
     medium: {
-      height: space['24'],
-      width: space['24'],
+      height: mediumSize,
+      width: mediumSize,
     },
     large: {
-      height: space['27'],
-      width: space['27'],
+      height: largeSize,
+      width: largeSize,
     }
   } as const satisfies ButtonSizes
 }

@@ -1,4 +1,3 @@
-import { TextProps } from '../Text.tsx';
 import { TextSize } from '../types.ts';
 
 export const getTextFontSize = (size: TextSize = 3) => {

@@ -58,6 +58,8 @@ export const BaseButton: FC<BaseButtonProps> = ({
   return (
     <BaseButtonAnimationProvider pressed={sharedPressed}>
       <Pressable
+        accessible
+        accessibilityRole='button'
         role='button'
         disabled={disabled}
         onPressIn={onPressIn}

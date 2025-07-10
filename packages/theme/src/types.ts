@@ -13,6 +13,9 @@ export interface Theme {
   
   gray: Record<ColorPallet, string>,
   blue: Record<ColorPallet, string>,
+  green: Record<ColorPallet, string>,
+  orange: Record<ColorPallet, string>,
+  red: Record<ColorPallet, string>,
   
   primary: Record<ColorPallet, string>,
   secondary: Record<ColorPallet, string>,

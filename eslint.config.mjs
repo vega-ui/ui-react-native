@@ -17,7 +17,7 @@ export default defineConfig([
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/strict-boolean-expressions': 'off',
       '@typescript-eslint/no-floating-promises': 'off',
-      '@typescript-eslint/explicit-function-return-type': 'off'
+      'no-unused-vars': 'off'
     },
     extends: ['js/recommended'],
   },

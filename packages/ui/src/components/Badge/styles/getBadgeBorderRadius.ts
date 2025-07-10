@@ -1,0 +1,1 @@
+export const getBadgeBorderRadius = (size: number, brRatio: number = 0.33) => size * brRatio

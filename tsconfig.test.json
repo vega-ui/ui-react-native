@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
+    "types": ["react-native", "jest"],
+    "jsx": "react-native",
     "esModuleInterop": true,
     "paths": {
       "@vega-ui/tokens": ["./packages/tokens/src/index.ts"],
-      "@vega-ui/tokens/*": ["./packages/tokens/src/*"],
-    }
+      "@vega-ui/tokens/*": ["./packages/tokens/src/*"]
+    },
   },
   "exclude": ["node_modules"]
 }

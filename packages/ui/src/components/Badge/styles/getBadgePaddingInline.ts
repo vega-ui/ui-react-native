@@ -1,0 +1,1 @@
+export const getBadgePaddingInline = (size: number) => size / 2.5

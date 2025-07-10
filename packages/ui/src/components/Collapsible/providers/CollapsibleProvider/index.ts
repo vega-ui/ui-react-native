@@ -1,0 +1,1 @@
+export { CollapsibleProvider, type CollapsibleProviderProps } from './CollapsibleProvider.tsx'
