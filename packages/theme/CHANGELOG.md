@@ -1,5 +1,16 @@
 # @vega-ui/theme
 
+## 0.4.0
+
+### Minor Changes
+
+- b1680e2: Added Switch component, hooks useStyle & useThemedStyle, refactored useButtonStyles + IconButton/Button
+
+### Patch Changes
+
+- Updated dependencies [b1680e2]
+  - @vega-ui/tokens@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes
