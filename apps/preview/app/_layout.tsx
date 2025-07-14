@@ -5,9 +5,11 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { darkTheme, lightTheme, ThemeProvider } from '@vega-ui/theme';
+import {useMemo} from "react";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
+  const theme = useMemo(() => colorScheme === 'dark' ? darkTheme : lightTheme, [colorScheme])
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
@@ -18,7 +20,7 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider theme={colorScheme === 'dark' ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />

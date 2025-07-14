@@ -1,4 +1,4 @@
-import { BadgeVariant, BadgeAppearance } from '../types.ts';
+import { BadgeVariant, BadgeAppearance } from '../../../types.ts';
 import { lightTheme, Theme } from '@vega-ui/theme';
 
 type AllBadgeVariants = `${BadgeVariant}${Capitalize<BadgeAppearance>}`

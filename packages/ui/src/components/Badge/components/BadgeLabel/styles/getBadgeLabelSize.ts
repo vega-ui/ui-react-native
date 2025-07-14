@@ -1,5 +1,5 @@
-import { BadgeSize } from '../types.ts';
-import { TextSize } from '../../Text/types.ts';
+import { BadgeSize } from '../../../types.ts';
+import { TextSize } from '../../../../Text/types.ts';
 
 export const getBadgeLabelSize = (size: BadgeSize): TextSize => {
   if (typeof size === 'number') return 3

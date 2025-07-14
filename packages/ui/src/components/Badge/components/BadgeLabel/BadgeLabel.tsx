@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { Text, TextProps } from '../../../Text';
-import { useBadgeContext, useBadgeLabelColor } from '../../hooks';
-import { getBadgeLabelSize } from '../../styles';
+import { useBadgeContext } from '../../hooks';
+import { useBadgeLabelColor } from './hooks';
+import { getBadgeLabelSize } from './styles';
 
 export type BadgeLabelProps = TextProps
 
