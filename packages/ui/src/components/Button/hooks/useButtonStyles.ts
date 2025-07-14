@@ -1,16 +1,17 @@
-import { FC, useMemo } from 'react';
 import { ButtonSize } from '../types.ts';
 import { getButtonBorderRadius, getButtonSizeStyles } from '../styles';
 import { StyleProp, ViewStyle } from 'react-native';
+import { useStyle } from '../../../shared/hooks';
 
 export const useButtonStyles = (size: ButtonSize, brRatio: number): StyleProp<ViewStyle> => {
-  return useMemo(() => {
+  
+  return useStyle(() => {
     const sizeStyles = getButtonSizeStyles()[size]
     const br = getButtonBorderRadius(sizeStyles.height, brRatio)
     
-    return ({
+    return {
       borderRadius: br,
       ...sizeStyles,
-    })
+    }
   }, [brRatio, size])
 }

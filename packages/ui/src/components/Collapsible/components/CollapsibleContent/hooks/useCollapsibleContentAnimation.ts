@@ -1,6 +1,7 @@
 import { useAnimatedStyle, useDerivedValue, useSharedValue, withTiming } from 'react-native-reanimated';
 import { LayoutChangeEvent } from 'react-native';
 import type { AnimationCallback } from 'react-native-reanimated/src/commonTypes.ts';
+import { animations } from '@vega-ui/tokens';
 
 export interface UseCollapsibleContentAnimationOptions {
   opened?: boolean
@@ -12,7 +13,7 @@ export const useCollapsibleContentAnimation = ({ opened, callback }: UseCollapsi
   
   const derivedHeight = useDerivedValue(() =>
     withTiming(height.value * Number(opened ?? 0), {
-      duration: 150,
+      duration: animations.delay.normal,
     }, callback)
   );
   

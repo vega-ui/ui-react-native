@@ -1,12 +1,13 @@
 import { Easing, useSharedValue, withTiming } from 'react-native-reanimated'
 import { useCallback } from 'react';
+import { animations } from '@vega-ui/tokens';
 
 export interface UsePressAnimationOptions {
   duration?: number
 }
 
 export const usePressAnimation = (options?: UsePressAnimationOptions) => {
-  const { duration = 125 } = options ?? {}
+  const { duration = animations.delay.normal } = options ?? {}
   const pressed = useSharedValue(0)
   
   const onPressIn = useCallback(() => {

@@ -1,12 +1,13 @@
 import { Context, createContext } from 'react';
 import { Theme } from '../../types.ts';
+import { lightTheme } from '../../constants';
 
 export interface ThemeContextState {
-  theme: Theme | undefined
+  theme: Theme
 }
 
 export const defaultThemeContext: ThemeContextState = {
-  theme: undefined
+  theme: lightTheme
 }
 
 export const ThemeContext: Context<ThemeContextState> = createContext(defaultThemeContext)

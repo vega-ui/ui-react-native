@@ -1,0 +1,1 @@
+export const getSwitchTrackWidth = (size: number, padding: number) => size * 2 - padding * 2

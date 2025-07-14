@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View } from 'react-native';
+import {Switch as RNSwitch, View} from 'react-native';
 import {
   Text,
   Button,
@@ -11,7 +11,8 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent, AccordionTriggerLabel, IconButton, IconButtonIcon, Alert,
-  AlertBody, Badge, BadgeLabel
+  AlertBody, Badge, BadgeLabel,
+  Switch,
 } from "@vega-ui/react-native";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Heart } from "@vega-ui/reanimated-icons";
@@ -19,6 +20,8 @@ import { Heart } from "@vega-ui/reanimated-icons";
 export default function HomeScreen() {
   const scheme = useColorScheme()
   const [collapsed, setCollapsed] = useState(false)
+  
+  const [checked, setChecked] = useState<boolean>(false)
   
   return (
     <View style={{ paddingTop: 200, flex: 1, alignItems: 'center', backgroundColor: scheme === 'dark' ? 'black' : 'white', position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
@@ -60,11 +63,15 @@ export default function HomeScreen() {
       <Alert title='Hello' variant='success' appearance='surface'>
         <AlertBody>Hi!</AlertBody>
       </Alert>
-      <Badge size='md' variant='success' appearance='surface'>
-        <BadgeLabel>
-          Hello!
-        </BadgeLabel>
-      </Badge>
+      <View style={{ display: 'flex', flexDirection: 'row', gap: 2, alignItems: 'center' }}>
+        <Badge size='sm' variant='success' appearance='surface'>
+          <BadgeLabel>
+            Hello!
+          </BadgeLabel>
+        </Badge>
+        <RNSwitch value={checked} onChange={() => setChecked(!checked)} />
+        <Switch variant='primary' size='medium' />
+      </View>
     </View>
   );
 }
