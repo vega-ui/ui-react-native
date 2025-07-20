@@ -31,12 +31,12 @@
     "build"
   ],
   "dependencies": {
-    "@vega-ui/theme": "workspace:*",
-    "@vega-ui/tokens": "workspace:*",
+    "@vega-ui/hooks": "1.4.0",
     "@vega-ui/icons-react-native": "workspace:*",
     "@vega-ui/reanimated-icons": "workspace:*",
-    "@vega-ui/utils": "1.4.0",
-    "@vega-ui/hooks": "1.4.0"
+    "@vega-ui/theme": "workspace:*",
+    "@vega-ui/tokens": "workspace:*",
+    "@vega-ui/utils": "1.4.0"
   },
   "devDependencies": {
     "@react-native/babel-preset": "0.79.3",
@@ -47,7 +47,7 @@
     "jest": "^29.6.3",
     "react": "19.0.0",
     "react-native": "0.79.4",
-    "react-native-reanimated": "3.18.0",
+    "react-native-reanimated": "~3.17.5",
     "react-native-svg": "15.12.0",
     "react-test-renderer": "19.0.0",
     "tsup": "^8.5.0"
@@ -55,7 +55,7 @@
   "peerDependencies": {
     "react": "^19.0.0",
     "react-native": "^0.79.4",
-    "react-native-reanimated": "^3.18.0",
+    "react-native-reanimated": "~3.17.5",
     "react-native-svg": "^15.12.0"
   },
   "publishConfig": {

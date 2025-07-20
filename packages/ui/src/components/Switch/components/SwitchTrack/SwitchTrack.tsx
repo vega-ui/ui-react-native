@@ -48,7 +48,7 @@ export const SwitchTrack: FC<SwitchTrackProps> = ({ onChange, style, children, .
       disabled={disabled}
     >
       <Animated.View
-        style={[styles.track, switchStyle, animatedStyle, style]}
+        style={[styles.track, switchStyle.track, animatedStyle, style]}
         onLayout={onLayout}
         {...props}
       >

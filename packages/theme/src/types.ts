@@ -11,6 +11,10 @@ export interface Theme {
   white: string
   black: string
   
+  surface: {
+    foreground: string
+  }
+  
   gray: Record<ColorPallet, string>,
   blue: Record<ColorPallet, string>,
   green: Record<ColorPallet, string>,
@@ -25,6 +29,12 @@ export interface Theme {
     background: string
     placeholderText: string
     border: string
+  }
+  
+  field: {
+    placeholder: string
+    border: string
+    borderActive: string
   }
 }
 

@@ -12,6 +12,10 @@ export const lightTheme: Theme = {
   white: colors.white,
   black: colors.black,
   
+  surface: {
+    foreground: '#FFFFFF',
+  },
+  
   gray: {
     0: colors.gray[0],
     50: colors.gray[50],
@@ -185,5 +189,11 @@ export const lightTheme: Theme = {
     background: colors.gray[100],
     placeholderText: colors.gray[600],
     border: colors.gray[300]
+  },
+  
+  field: {
+    placeholder: colors.gray[500],
+    border: colors.gray[300],
+    borderActive: colors.gray[500]
   }
 } as const

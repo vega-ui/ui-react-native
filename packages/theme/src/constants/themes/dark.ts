@@ -12,6 +12,10 @@ export const darkTheme: Theme = {
   white: colors.white,
   black: colors.black,
   
+  surface: {
+    foreground: '#1F2227',
+  },
+  
   gray: {
     0: colors.gray[1000],
     50: colors.gray[950],
@@ -185,5 +189,11 @@ export const darkTheme: Theme = {
     background: colors.gray[900],
     placeholderText: colors.gray[400],
     border: colors.gray[700]
+  },
+  
+  field: {
+    placeholder: colors.gray[500],
+    border: colors.gray[700],
+    borderActive: colors.gray[500]
   }
 } as const

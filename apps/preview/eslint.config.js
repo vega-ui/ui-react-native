@@ -6,5 +6,8 @@ module.exports = defineConfig([
   expoConfig,
   {
     ignores: ['dist/*'],
+    rules: {
+      'object-curly-spacing': ['error', 'always'],
+    }
   },
 ]);
