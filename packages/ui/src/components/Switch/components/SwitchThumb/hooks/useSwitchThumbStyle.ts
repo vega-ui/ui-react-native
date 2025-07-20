@@ -6,7 +6,9 @@ export const useSwitchThumbStyle = (disabled?: boolean) => {
     const { disabled: disabledColor, enabled: enabledColor } = getSwitchThumbColor(theme)
     
     return {
-      backgroundColor: disabled ? disabledColor : enabledColor,
+      thumb: {
+        backgroundColor: disabled ? disabledColor : enabledColor,
+      }
     }
   }, [disabled])
 }

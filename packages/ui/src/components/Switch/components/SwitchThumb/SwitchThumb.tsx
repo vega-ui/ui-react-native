@@ -20,6 +20,6 @@ export const SwitchThumb: FC<SwitchThumbProps> = ({ ...props }) => {
   const style = useSwitchThumbStyle(disabled)
 
   return (
-    <Animated.View style={[animatedStyle, style]} {...props} />
+    <Animated.View style={[animatedStyle, style.thumb]} {...props} />
   )
 }

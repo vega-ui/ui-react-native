@@ -28,7 +28,7 @@ export const Button: FC<ButtonProps> = ({ children, size = 'medium', style, brRa
   return (
     <BaseButton
       style={({ pressed }) => [
-        buttonStyles,
+        buttonStyles.button,
         typeof style === 'function' ? style({ pressed }) : style
       ]}
       {...props}

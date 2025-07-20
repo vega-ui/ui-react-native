@@ -28,7 +28,7 @@ export const IconButton: FC<IconButtonProps> = ({ children, size = 'medium', sty
   
   return (
     <IconButtonProvider size={size}>
-      <BaseButton style={({ pressed }) => [iconButtonStyles, buttonStyles.button, typeof style === 'function' ? style({ pressed }) : style]} {...props}>
+      <BaseButton style={({ pressed }) => [iconButtonStyles.iconButton, buttonStyles.button, typeof style === 'function' ? style({ pressed }) : style]} {...props}>
         {({ pressed }) => (
           typeof children === 'function' ? children({ pressed }) : children
         )}

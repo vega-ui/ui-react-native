@@ -7,7 +7,9 @@ export const useSwitchTrackSizeStyle = (size: SwitchSize, padding = 2) => {
   const switchSize = typeof size === 'number' ? size : getSwitchSizes()[size];
   
   return useThemedStyle(({ gray }) => ({
-    backgroundColor: gray['150'],
-    ...getSwitchTrackSizeStyle(switchSize, padding),
+    track: {
+      backgroundColor: gray['150'],
+      ...getSwitchTrackSizeStyle(switchSize, padding),
+    }
   }), [switchSize, padding])
 }

@@ -1,6 +1,7 @@
-import { interpolateColor, useAnimatedStyle } from 'react-native-reanimated'
+import { useAnimatedStyle } from 'react-native-reanimated'
 import { ViewStyle } from 'react-native';
 import { usePressAnimation } from '../../../shared/hooks';
+import { mergeInterpolateColor } from '../../../shared/helpers';
 
 export interface UseBaseButtonPressAnimationsOptions {
   enabledStyle?: ViewStyle
@@ -19,19 +20,7 @@ export const useBaseButtonPressAnimations = ({
   
   const animatedStyle = useAnimatedStyle(() => {
     if (disabled && disabledStyle) return disabledStyle
-    
-    const { backgroundColor, borderColor } = enabledStyle ?? {}
-    const { backgroundColor: pressedBackgroundColor, borderColor: pressedBorderColor } = pressedStyle ?? {}
-
-    const bgColor =  backgroundColor && pressedBackgroundColor
-      ? interpolateColor(pressed.value, [0, 1], [backgroundColor as string, pressedBackgroundColor as string])
-      : undefined
-    
-    const bColor =  borderColor && pressedBorderColor
-      ? interpolateColor(pressed.value, [0, 1], [borderColor as string, pressedBorderColor as string])
-      : undefined
-    
-    return { backgroundColor: bgColor, borderColor: bColor }
+    return mergeInterpolateColor([enabledStyle, pressedStyle], pressed)
   })
   
   return {

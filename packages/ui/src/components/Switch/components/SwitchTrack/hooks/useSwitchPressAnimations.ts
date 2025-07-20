@@ -1,5 +1,12 @@
-import { interpolateColor, SharedValue, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated'
+import {
+  DerivedValue,
+  SharedValue,
+  useAnimatedStyle,
+  useDerivedValue,
+  withTiming,
+} from 'react-native-reanimated'
 import { ViewStyle } from 'react-native';
+import { mergeInterpolateColor } from '../../../../../shared/helpers';
 import { animations } from '@vega-ui/tokens';
 
 export interface UseBaseButtonPressAnimationsOptions {
@@ -22,29 +29,14 @@ export const useSwitchPressAnimations = ({
   pressed,
 }: UseBaseButtonPressAnimationsOptions) => {
   const animatedColor = useDerivedValue(() => {
-    if (pressed.value === 1 && !active) return pressed.value
-    return active ? 2 : 0
-  }, [active])
+    const target = (active ? 2 : 0)
+    return (pressed.value !== 0 && !active) ? pressed.value : withTiming(target, { duration: animations.delay.normal });
+  }, [active]);
   
   const animatedStyle = useAnimatedStyle(() => {
-    const enabledBgColor = enabledStyle?.backgroundColor as string
-    const disabledBgColor = disabledStyle?.backgroundColor as string
-    const preseedBgColor = pressedStyle?.backgroundColor as string
-    const activeBgColor = activeStyle?.backgroundColor as string
-    
-    if (!enabledBgColor && !preseedBgColor && !activeBgColor) return {}
-    if (disabled && disabledBgColor) return { backgroundColor: disabledBgColor }
-    
-    const bg = interpolateColor(
-      animatedColor.value,
-      [0, 1, 2],
-      [enabledBgColor, preseedBgColor, activeBgColor]
-    )
-    const animatedBg = withTiming(bg, { duration: animations.delay.normal })
-    
-    return { backgroundColor: animatedBg }
+    if (disabled && disabledStyle) return disabledStyle
+    return mergeInterpolateColor([enabledStyle, pressedStyle, activeStyle], animatedColor as DerivedValue<number>)
   })
-  
   
   return {
     animatedStyle,
