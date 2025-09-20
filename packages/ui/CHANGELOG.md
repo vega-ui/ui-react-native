@@ -1,5 +1,19 @@
 # @vega-ui/react-native
 
+## 0.5.0
+
+### Minor Changes
+
+- b19c4f8: Added new sizes for button and icon button - xl, xs
+
+### Patch Changes
+
+- Updated dependencies [b19c4f8]
+  - @vega-ui/tokens@0.5.0
+  - @vega-ui/theme@0.5.0
+  - @vega-ui/icons-react-native@0.5.0
+  - @vega-ui/reanimated-icons@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes
