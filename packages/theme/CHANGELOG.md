@@ -1,5 +1,12 @@
 # @vega-ui/theme
 
+## 0.5.0
+
+### Patch Changes
+
+- Updated dependencies [b19c4f8]
+  - @vega-ui/tokens@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes

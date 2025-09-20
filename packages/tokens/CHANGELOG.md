@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.5.0
+
+### Minor Changes
+
+- b19c4f8: Added new sizes for button and icon button - xl, xs
+
 ## 0.4.0
 
 ### Minor Changes
