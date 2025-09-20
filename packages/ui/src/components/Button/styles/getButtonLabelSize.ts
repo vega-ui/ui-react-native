@@ -5,8 +5,10 @@ export type ButtonLabelSizes = Record<ButtonSize, BaseButtonLabelProps['size']>
 
 export const getButtonLabelSize = () => {
   return {
-    small: 2,
-    medium: 3,
-    large: 4
+    xs: 2,
+    sm: 2,
+    md: 3,
+    lg: 4,
+    xl: 4,
   } as const satisfies ButtonLabelSizes
 }

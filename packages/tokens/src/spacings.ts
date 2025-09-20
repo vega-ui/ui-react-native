@@ -21,6 +21,7 @@ export const spacings = (scale: number = 2) => ({
   26: scale * 26,
   27: scale * 27,
   28: scale * 28,
+  30: scale * 30,
   32: scale * 32,
   36: scale * 36,
   40: scale * 40,

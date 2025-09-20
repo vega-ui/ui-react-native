@@ -5,20 +5,28 @@ import { IconButtonSize } from '../types.ts';
 export type ButtonSizes = Record<IconButtonSize, StyleProp<ViewStyle>>
 
 export const getButtonSizeStyles = () => {
-  const { small: smallSize, medium: mediumSize, large: largeSize } = getButtonSizes()
+  const { xs: xsSize, sm: smallSize, md: mediumSize, lg: largeSize, xl: xlSize } = getButtonSizes()
   
   return {
-    small: {
+    xs: {
+      height: xsSize,
+      width: xsSize,
+    },
+    sm: {
       height: smallSize,
       width: smallSize,
     },
-    medium: {
+    md: {
       height: mediumSize,
       width: mediumSize,
     },
-    large: {
+    lg: {
       height: largeSize,
       width: largeSize,
-    }
+    },
+    xl: {
+      height: xlSize,
+      width: xlSize,
+    },
   } as const satisfies ButtonSizes
 }

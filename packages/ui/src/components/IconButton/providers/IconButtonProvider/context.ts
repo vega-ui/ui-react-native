@@ -6,7 +6,7 @@ export interface IconButtonContextState {
 }
 
 export const defaultIconButtonContext: IconButtonContextState = {
-  size: 'medium'
+  size: 'md'
 }
 
 export const IconButtonContext: Context<IconButtonContextState> = createContext(defaultIconButtonContext)

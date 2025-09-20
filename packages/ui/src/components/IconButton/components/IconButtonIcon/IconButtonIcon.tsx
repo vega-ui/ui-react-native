@@ -8,7 +8,7 @@ export interface IconButtonIconProps {
 }
 
 export const IconButtonIcon: FC<IconButtonIconProps> = ({ children }) => {
-  const { size = 'medium' } = useIconButtonContext()
+  const { size = 'md' } = useIconButtonContext()
   
   return (
     <BaseButtonIcon size={getIconButtonIconSize(size)}>

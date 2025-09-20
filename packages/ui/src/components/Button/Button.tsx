@@ -12,7 +12,7 @@ export interface ButtonProps extends BaseButtonProps {
   brRatio?: number;
   
   /**
-   * Size of the button. Can be 'small', 'medium', or 'large'.
+   * Size of the button.
    * Adjusts the overall size of the button and the icon inside it (if any).
    */
   size?: ButtonSize;
@@ -22,7 +22,7 @@ export interface ButtonProps extends BaseButtonProps {
  * Button is a UI component used for triggering actions.
  * It supports customizable size, border radius, and appearance, with optional text or icon content.
  */
-export const Button: FC<ButtonProps> = ({ children, size = 'medium', style, brRatio = 0.333, ...props }) => {
+export const Button: FC<ButtonProps> = ({ children, size = 'md', style, brRatio = 0.333, ...props }) => {
   const buttonStyles = useButtonStyles(size, brRatio)
   
   return (
