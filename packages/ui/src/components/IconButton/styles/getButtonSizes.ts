@@ -4,8 +4,10 @@ export const getButtonSizes = () => {
   const space = spacings()
   
   return {
-    small: space['21'],
-    medium: space['24'],
-    large: space['27']
+    xs: space['18'],
+    sm: space['21'],
+    md: space['24'],
+    lg: space['27'],
+    xl: space['30'],
   } as const
 }

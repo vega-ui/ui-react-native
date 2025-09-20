@@ -26,7 +26,7 @@ describe('IconButton', () => {
   
   it('renders IconButton with correct icon size based on size prop', () => {
     const { getByTestId } = render(
-      <IconButton size='medium'>
+      <IconButton size='md'>
         <HeartIcon testID='heart-icon' />
       </IconButton>
     );

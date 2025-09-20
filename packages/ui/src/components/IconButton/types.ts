@@ -1,1 +1,1 @@
-export type IconButtonSize = 'small' | 'medium' | 'large';
+export type IconButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';

@@ -9,20 +9,30 @@ export const getButtonSizeStyles = () => {
   const space = spacings()
   
   return {
-    small: {
+    xs: {
+      height: space['18'],
+      paddingInline: space['8'],
+      paddingBlock: space['4'],
+    },
+    sm: {
       height: space['21'],
       paddingInline: space['10'],
       paddingBlock: space['6'],
     },
-    medium: {
+    md: {
       height: space['24'],
       paddingInline: space['18'],
       paddingBlock: space['7'],
     },
-    large: {
+    lg: {
       height: space['27'],
       paddingInline: space['24'],
       paddingBlock: space['8'],
-    }
+    },
+    xl: {
+      height: space['30'],
+      paddingInline: space['24'],
+      paddingBlock: space['8'],
+    },
   } as const satisfies ButtonSizes
 }

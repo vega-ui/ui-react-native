@@ -13,7 +13,7 @@ export interface IconButtonProps extends BaseButtonProps {
   brRatio?: number;
   
   /**
-   * Size of the icon button. Can be 'small', 'medium', or 'large'.
+   * Size of the icon button.
    * Adjusts the overall size of the button and the icon.
    */
   size?: IconButtonSize;
@@ -23,7 +23,7 @@ export interface IconButtonProps extends BaseButtonProps {
  * IconButton is a UI component that combines an icon with a button, allowing for interactive actions.
  * It supports customizable size, border radius, and an optional icon inside.
  */
-export const IconButton: FC<IconButtonProps> = ({ children, size = 'medium', style, brRatio = 0.333, ...props }) => {
+export const IconButton: FC<IconButtonProps> = ({ children, size = 'md', style, brRatio = 0.333, ...props }) => {
   const iconButtonStyles = useIconButtonStyles(size, brRatio)
   
   return (

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { View } from 'react-native';
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { Button, ButtonLabel, TextField, Switch } from "@vega-ui/react-native";
+import { Button, ButtonLabel, TextField, Switch, ButtonIcon, IconButton, IconButtonIcon } from "@vega-ui/react-native";
+import { Globe } from "@vega-ui/reanimated-icons";
 
 export default function HomeScreen() {
   const scheme = useColorScheme()
@@ -18,6 +19,9 @@ export default function HomeScreen() {
         <Button onPress={() => setValue(value + 1)}>
           <ButtonLabel>Increment (now: {value})</ButtonLabel>
         </Button>
+        <IconButton>
+          <IconButtonIcon><Globe /></IconButtonIcon>
+        </IconButton>
       </View>
     </View>
   );
