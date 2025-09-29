@@ -13,7 +13,7 @@ export const darkTheme: Theme = {
   black: colors.black,
   
   surface: {
-    foreground: '#1F2227',
+    foreground: '#1E2025',
   },
   
   gray: {
