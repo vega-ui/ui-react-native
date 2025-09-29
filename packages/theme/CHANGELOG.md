@@ -1,5 +1,12 @@
 # @vega-ui/theme
 
+## 0.5.1
+
+### Patch Changes
+
+- cff8d2c: Made surface color (dark theme) darker and more contrast
+  - @vega-ui/tokens@0.5.1
+
 ## 0.5.0
 
 ### Patch Changes
