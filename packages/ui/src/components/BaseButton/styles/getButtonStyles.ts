@@ -65,7 +65,7 @@ export const getButtonStyles = (theme?: Theme) => {
         backgroundColor: 'transparent',
       },
       pressed: {
-        backgroundColor: primary[50],
+        backgroundColor: primary[100],
       },
       disabled: {
         backgroundColor: 'transparent',
@@ -122,7 +122,7 @@ export const getButtonStyles = (theme?: Theme) => {
         backgroundColor: 'transparent',
       },
       pressed: {
-        backgroundColor: secondary[50],
+        backgroundColor: secondary[100],
       },
       disabled: {
         backgroundColor: 'transparent',

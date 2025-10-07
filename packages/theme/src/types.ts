@@ -1,3 +1,5 @@
+import { colors } from '@vega-ui/tokens';
+
 type ColorPallet = 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 | 550 | 600 | 650 | 700 | 750 | 800 | 850 | 900 | 950 | 1000
 
 export interface Theme {
@@ -12,7 +14,11 @@ export interface Theme {
   black: string
   
   surface: {
-    foreground: string
+    ultrathin: string
+    thin: string
+    regular: string
+    thick: string
+    ultrathick: string
   }
   
   gray: Record<ColorPallet, string>,
@@ -35,6 +41,8 @@ export interface Theme {
     placeholder: string
     border: string
     borderActive: string
+    backgroundColor: string
+    backgroundHoverColor: string
   }
 }
 
