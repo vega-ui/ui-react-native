@@ -9,22 +9,22 @@ export interface TextFieldStatesStyle {
 }
 
 export const getTextFieldVariantStyle = (theme: Theme): TextFieldStatesStyle => {
-  const { field, disable, surface, primary, red } = theme
+  const { field, disable, primary, red } = theme
   
   return {
     enabled: {
-      borderColor: field.border,
-      backgroundColor: surface.foreground,
+      borderColor: 'transparent',
+      backgroundColor: field.backgroundColor,
     },
     active: {
-      backgroundColor: surface.foreground,
+      backgroundColor: field.backgroundColor,
       borderColor: primary[500],
     },
     disabled: {
-      borderColor: field.border,
       backgroundColor: disable.background,
     },
     error: {
+      backgroundColor: field.backgroundColor,
       borderColor: red[500],
     }
   }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View } from 'react-native';
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { Button, ButtonLabel, TextField, Switch, ButtonIcon, IconButton, IconButtonIcon } from "@vega-ui/react-native";
+import { Button, ButtonLabel, TextField, Switch, IconButton, IconButtonIcon } from "@vega-ui/react-native";
 import { Globe } from "@vega-ui/reanimated-icons";
 
 export default function HomeScreen() {
@@ -16,7 +16,7 @@ export default function HomeScreen() {
         <TextField disabled keyboardType='email-address' placeholder='Last name' />
         <TextField error disabled keyboardType='email-address' placeholder='Last name' />
         <Switch />
-        <Button onPress={() => setValue(value + 1)}>
+        <Button variant='secondary' appearance='transparent' onPress={() => setValue(value + 1)}>
           <ButtonLabel>Increment (now: {value})</ButtonLabel>
         </Button>
         <IconButton>

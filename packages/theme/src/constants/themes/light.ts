@@ -13,7 +13,11 @@ export const lightTheme: Theme = {
   black: colors.black,
   
   surface: {
-    foreground: '#FFFFFF',
+    ultrathin: colors.white,
+    thin: colors.gray['50'],
+    regular: colors.gray['50'],
+    thick: colors.gray['100'],
+    ultrathick: colors.gray['150'],
   },
   
   gray: {
@@ -186,7 +190,7 @@ export const lightTheme: Theme = {
   
   disable: {
     text: colors.gray[700],
-    background: colors.gray[100],
+    background: colors.gray[150],
     placeholderText: colors.gray[600],
     border: colors.gray[300]
   },
@@ -194,6 +198,8 @@ export const lightTheme: Theme = {
   field: {
     placeholder: colors.gray[500],
     border: colors.gray[300],
-    borderActive: colors.gray[500]
+    borderActive: colors.gray[500],
+    backgroundColor: colors.gray['50'],
+    backgroundHoverColor: colors.gray['100'],
   }
 } as const

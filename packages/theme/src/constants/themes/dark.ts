@@ -13,7 +13,11 @@ export const darkTheme: Theme = {
   black: colors.black,
   
   surface: {
-    foreground: '#1E2025',
+    ultrathin: '#1E2025',
+    thin: colors.white,
+    regular: colors.gray['950'],
+    thick: colors.gray['900'],
+    ultrathick: colors.gray['850'],
   },
   
   gray: {
@@ -186,7 +190,7 @@ export const darkTheme: Theme = {
   
   disable: {
     text: colors.gray[300],
-    background: colors.gray[900],
+    background: colors.gray[850],
     placeholderText: colors.gray[400],
     border: colors.gray[700]
   },
@@ -194,6 +198,8 @@ export const darkTheme: Theme = {
   field: {
     placeholder: colors.gray[500],
     border: colors.gray[700],
-    borderActive: colors.gray[500]
+    borderActive: colors.gray[500],
+    backgroundColor: colors.gray['950'],
+    backgroundHoverColor: colors.gray['900'],
   }
 } as const

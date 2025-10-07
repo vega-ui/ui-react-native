@@ -4,7 +4,6 @@ import { TextFieldSize } from '../../types.ts';
 import { useTextFieldWrapperStyle } from './hooks';
 import Animated, { SharedValue } from 'react-native-reanimated';
 import { useTextFieldAnimations, useTextFieldStyles } from '../../hooks';
-import { useTheme } from '@vega-ui/theme';
 
 export interface TextFieldWrapperProps extends ViewProps {
   size: TextFieldSize
@@ -41,6 +40,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderStyle: 'solid',
     borderWidth: 1,
-    backgroundColor: 'transparent',
+    borderColor: 'transparent',
   }
 })
