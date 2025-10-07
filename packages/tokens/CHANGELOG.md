@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.5.2
+
+### Patch Changes
+
+- 10dcbe8: The gray colors have been changed, the surface has been added, and the fields styles have also been changed
+
 ## 0.5.1
 
 ## 0.5.0
