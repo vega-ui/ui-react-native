@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.5.3
+
+### Patch Changes
+
+- 2c35e4e: Made graphite color more contrast than grey
+
 ## 0.5.2
 
 ### Patch Changes
