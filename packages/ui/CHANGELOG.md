@@ -1,5 +1,15 @@
 # @vega-ui/react-native
 
+## 0.5.3
+
+### Patch Changes
+
+- Updated dependencies [2c35e4e]
+  - @vega-ui/tokens@0.5.3
+  - @vega-ui/theme@0.5.3
+  - @vega-ui/icons-react-native@0.5.3
+  - @vega-ui/reanimated-icons@0.5.3
+
 ## 0.5.2
 
 ### Patch Changes
