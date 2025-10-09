@@ -22,7 +22,7 @@ export const useTextFieldAnimations = ({
   focused,
 }: UseTextFieldAnimationsOptions) => {
   const animatedStyle = useAnimatedStyle(() => {
-    if (disabled || error) return mergeStyles(disabled && disabledStyle, error && errorStyle)
+    if (disabled || error) return mergeStyles(error && errorStyle, disabled && disabledStyle)
     return mergeInterpolateColor([enabledStyle, activeStyle], focused)
   })
   

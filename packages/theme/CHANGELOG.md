@@ -1,5 +1,27 @@
 # @vega-ui/theme
 
+## 0.5.2
+
+### Patch Changes
+
+- 10dcbe8: The gray colors have been changed, the surface has been added, and the fields styles have also been changed
+- Updated dependencies [10dcbe8]
+  - @vega-ui/tokens@0.5.2
+
+## 0.5.1
+
+### Patch Changes
+
+- cff8d2c: Made surface color (dark theme) darker and more contrast
+  - @vega-ui/tokens@0.5.1
+
+## 0.5.0
+
+### Patch Changes
+
+- Updated dependencies [b19c4f8]
+  - @vega-ui/tokens@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes
