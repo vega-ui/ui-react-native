@@ -16,11 +16,12 @@
   "license": "MIT",
   "packageManager": "pnpm@10.11.0",
   "resolutions": {
-    "react": "19.0.0",
+    "react": "19.1.0",
     "react-native-renderer": "19.0.0",
-    "react-native-reanimated": "~3.17.5",
-    "@types/react": "19.0.10",
-    "react-native": "0.79.5"
+    "react-native-reanimated": "~4.1.1",
+    "@types/react": "19.1.17",
+    "react-native": "0.81.4",
+    "react-native-worklets": "0.5.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
@@ -31,7 +32,7 @@
     "eslint-plugin-jest": "^28.13.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "turbo": "^2.5.4",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.0",
     "typescript-eslint": "^8.33.1"
   }
 }
