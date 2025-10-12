@@ -12,7 +12,7 @@
     "js"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "NODE_OPTIONS='--max-old-space-size=16384' tsup",
     "dev": "tsup --watch",
     "test": "jest",
     "clean": "rm -rf node_modules"
