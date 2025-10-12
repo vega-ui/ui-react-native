@@ -1,5 +1,11 @@
 # @vega-ui/reanimated-icons
 
+## 0.5.4
+
+### Patch Changes
+
+- d443fa0: Upped version (reanimated)\
+
 ## 0.5.3
 
 ## 0.5.2

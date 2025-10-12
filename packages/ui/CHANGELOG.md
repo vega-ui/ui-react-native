@@ -1,5 +1,18 @@
 # @vega-ui/react-native
 
+## 0.5.4
+
+### Patch Changes
+
+- c33f797: Changed smoke-1000 color
+- d443fa0: Upped version (reanimated)\
+- Updated dependencies [c33f797]
+- Updated dependencies [d443fa0]
+  - @vega-ui/tokens@0.5.4
+  - @vega-ui/reanimated-icons@0.5.4
+  - @vega-ui/theme@0.5.4
+  - @vega-ui/icons-react-native@0.5.4
+
 ## 0.5.3
 
 ### Patch Changes
