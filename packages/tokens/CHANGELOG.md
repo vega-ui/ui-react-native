@@ -1,5 +1,11 @@
 # @vega-ui/tokens
 
+## 0.5.4
+
+### Patch Changes
+
+- c33f797: Changed smoke-1000 color
+
 ## 0.5.3
 
 ### Patch Changes
